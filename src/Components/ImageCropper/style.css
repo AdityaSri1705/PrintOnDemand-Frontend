@@ -1,0 +1,68 @@
+.crop-container {
+    position: relative;
+    width: 400px; /* Set the width as per your design */
+    height: 300px; /* Set the height as per your design */
+  }
+  
+  .crop-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay{
+    border: 1px solid #F00;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+  }
+  .overlay.off{
+    display: none;
+  }
+  
+  .bleed-line-horizontal,
+  .bleed-line-vertical {
+    position: absolute;
+    /*background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red color */
+  }
+  
+  .bleed-line-horizontal {
+    width: 100%;
+    height: 1px; /* Adjust the thickness of the bleed line */
+    top: 50%;
+    left: 0;
+  }
+  
+  .bleed-line-vertical {
+    width: 1px; /* Adjust the thickness of the bleed line */
+    height: 100%;
+    top: 0;
+    left: 50%;
+  }
+  .CropBtn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 36px;
+    color: #000000;
+    text-align: center;
+    font-weight: 400;
+    color: #656571;
+    width: 38px;
+    height: auto;
+    font-size: 10px;
+    text-transform: capitalize;
+    background: 0 0;
+    border: 0;
+    margin-right: 16.21px;
+    cursor: pointer;
+  }
+  .CropBtn img{
+    width: 36px;
+  }
+  

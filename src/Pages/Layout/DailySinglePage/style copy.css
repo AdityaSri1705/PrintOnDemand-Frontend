@@ -1,0 +1,461 @@
+.timeBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.BoxHeaderText {
+  color: var(--greyscale-900, #212121);
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  padding-left: 16px !important;
+  cursor: pointer;
+}
+.choseOneSubText {
+  display: none;
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 140% !important;
+}
+.timeBoxItem {
+  width: 94px;
+  height: 80px;
+  border-radius: 4px;
+  border: 2px solid var(--greyscale-800, #9e9e9e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.timeSBox {
+  width: 18px;
+  height: 14px;
+  margin-bottom: 10px;
+  border: 2px solid #9e9e9e;
+  border-radius: 2px;
+}
+.timeBoxItem p {
+  color: var(--greyscale-900, #9e9e9e);
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}
+.timeBoxItemActive {
+  border: 2px solid var(--greyscale-800, black) !important;
+}
+.timeBoxItemActive p {
+  color: var(--greyscale-900, black);
+}
+.timeSBoxActive {
+  border: 2px solid black !important;
+}
+
+.customPopUpList {
+  width: 100%;
+  position: absolute;
+  top: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.customPopUpListItem {
+  height: 34px;
+  border: 1px solid gray;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s;
+}
+.customPopUpListItem:hover {
+  background: #c9c9c9;
+}
+
+.setTimeBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.setTimeInsideBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.setTimeInRadioBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.setTimeInRadioBox p {
+  color: var(--greyscale-900, #212121);
+  text-align: justify;
+  font-family: "Poppins-Regular" !important;
+  font-size: 11px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  display: flex;
+  align-items: center;
+}
+.weekBox {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #909090;
+  background: #fff;
+  padding: 21px 20px 20px 0px;
+}
+.weekRadioBox {
+  display: flex;
+  flex-direction: row;
+}
+.weekRadioBox p {
+  color: var(--greyscale-900, #212121);
+  text-align: justify;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+  display: flex;
+  align-items: center;
+}
+.TaskListBox {
+  width: 100%;
+  height: auto;
+  padding: 21px 20px 20px 0px;
+  border-radius: 4px;
+  border: 1px solid #909090;
+  background: #fff;
+}
+.taskRadioBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.customRadioBox {
+  display: flex;
+  flex-direction: column;
+}
+.customRadioInputBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.customRadioInputBox svg {
+  cursor: pointer;
+}
+.customRadioInputBoxInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3%;
+}
+.customRadioInputBoxInput input {
+  width: 70%;
+  height: 40px;
+  padding-left: 16px;
+  border-radius: 2px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+}
+.customRadioInputBoxInput input:focus {
+  outline: none;
+}
+.customRadioInputBox p {
+  display: flex;
+  align-items: center;
+}
+.titleSaveButton {
+  width: 82px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 0px 2px 2px 0px;
+  background: #b8845f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.titleSaveButton:hover {
+  background: #9c7050;
+}
+.titleSaveButton p {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 22px !important;
+}
+
+.leftCustomArrow {
+  position: absolute;
+  top: 24px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.DailySB-B0 {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 50%;
+  height: 4%;
+  display: flex;
+  align-items: baseline;
+}
+
+.DailySB-B1 {
+  position: absolute;
+  top: 2%;
+  right: 8%;
+  width: 37%;
+  height: 4%;
+}
+.DailySB-B2 {
+  position: absolute;
+  left: 3%;
+  top: 6%;
+  width: 50%;
+  height: 3%;
+}
+.DailySB-B3 {
+  position: absolute;
+  left: 3%;
+  top: 10%;
+  height: 71%;
+  width: 52%;
+  overflow: hidden;
+}
+.DailySB-B4 {
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  height: 74%;
+  width: 37%;
+  overflow: hidden;
+}
+.DailySB-B5 {
+  position: absolute;
+  left: 3%;
+  bottom: 2%;
+  width: 44%;
+  height: 16%;
+}
+.DailySB-B6 {
+  position: absolute;
+  right: 4%;
+  bottom: 2%;
+  width: 43%;
+  height: 16%;
+}
+.rightpage .DailySB-B0,
+.rightpage .DailySB-B2,
+.rightpage .DailySB-B3 {
+  left: 4%;
+}
+.rightpage .DailySB-B1,
+.rightpage .DailySB-B4 {
+  right: 2%;
+}
+.rightpage .DailySB-B5 {
+  left: 9%;
+}
+.rightpage .DailySB-B6 {
+  right: 2%;
+}
+
+.TopLeftDText {
+  position: absolute;
+  top: -3px;
+  left: 15px;
+  font-size: 6px !important;
+  color: #212121;
+  font-family: "JosefinSans" !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 8px !important;
+  word-wrap: break-word;
+}
+.BottomRightDText {
+  position: absolute;
+  top: -3px;
+  left: 2px;
+  font-size: 6px !important;
+  color: #212121;
+  font-family: "JosefinSans" !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 8px !important;
+  word-wrap: break-word;
+  text-transform: uppercase;
+}
+.BottomLeftDText {
+  position: absolute;
+  top: -3px;
+  left: 2px;
+  font-size: 6px !important;
+  color: #212121;
+  font-family: "JosefinSans" !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 12px !important;
+  word-wrap: break-word;
+  text-transform: uppercase;
+}
+.ctext-19 {
+  left: 10px;
+}
+.ctext-20 {
+  top: 2px;
+  left: 5px;
+}
+
+.TopRight {
+  position: absolute;
+  top: 36px;
+  right: 14px;
+  width: 45%;
+  height: 7%;
+}
+
+.BottomLeft {
+  position: absolute;
+  bottom: 44px;
+  left: 0px;
+  width: 50%;
+  height: 20%;
+}
+.BottomRight {
+  position: absolute;
+  bottom: 44px;
+  right: 0px;
+  width: 50%;
+  height: 20%;
+}
+.largeview .BottomLeftDText,
+.largeview .BottomRightDText {
+  font-size: 12px !important;
+}
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .setTimeInRadioBox p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+  }
+  .TopLeft {
+    position: absolute;
+    top: 14px;
+    left: 18px;
+    width: 45%;
+    height: 6%;
+  }
+  .TopLeftDText {
+    top: -3px;
+    left: 8px;
+    font-size: 8px !important;
+  }
+  .TopRight {
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    width: 45%;
+    height: 7%;
+  }
+  .BottomLeft {
+    bottom: 18px;
+  }
+  .BottomLeftDText {
+    font-size: 7px !important;
+  }
+  .BottomRight {
+    bottom: 18px;
+  }
+  .BottomRightDText {
+    font-size: 7px !important;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .diray_base {
+    height: 88%;
+  }
+
+  .timeBoxItem {
+    width: 126px;
+    height: 104px;
+  }
+  .timeBoxItem p {
+    font-size: 16px !important;
+  }
+  .choseOneSubText {
+    display: block;
+  }
+  .customPageBottomBox {
+    padding: 7px 20px 20px 0px;
+  }
+  .leftCustomArrow {
+    top: 23px;
+  }
+  .TopLeft {
+    position: absolute;
+    top: 36px;
+    left: 33px;
+    width: 45%;
+    height: 6%;
+  }
+  .TopLeftDText {
+    top: -3px;
+    left: 15px;
+    font-size: 14px !important;
+  }
+  .TopRight {
+    top: 36px;
+    right: 14px;
+    width: 45%;
+    height: 7%;
+  }
+  .BottomRight {
+    position: absolute;
+    bottom: 44px;
+    right: 0px;
+    width: 35%;
+    height: 20%;
+  }
+  .rightpage .DailySB-B6 {
+    right: 3%;
+  }
+  .BottomLeftDText,
+  .BottomRightDText {
+    font-size: 9px !important;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .BottomLeftDText,
+  .BottomRightDText {
+    font-size: 12px !important;
+  }
+}

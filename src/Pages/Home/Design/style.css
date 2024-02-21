@@ -1,0 +1,147 @@
+.designContainer {
+  width: 100%;
+}
+.designCardBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+  align-items: inherit;
+}
+.designCardBox > * {
+  flex: 0 0 100%;
+}
+.designCard:nth-child(1),
+.designCard:nth-child(3){
+  margin-top: 80px;
+}
+.designCard {
+  width: 100%;
+  height: auto;
+}
+
+.designCardCover {
+  width: 100%;
+  /* height: 436px; */
+  margin-bottom: 30px;
+}
+.designCardCover img {
+  width: 100%;
+  height: 100%;
+}
+.designCardTextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.designCardHeaderText {
+  color: #646464;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.designCardSubText {
+  color: #808080;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}
+.planBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.planText {
+  color: var(--greyscale-900, #646464);
+  font-family: "Poppins-Regular" !important;
+  font-size: 38px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 124% !important;
+  text-align: center;
+}
+.planBtn {
+  display: flex;
+  height: 50px;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--primary-ocher, #b8845f);
+  box-shadow: 4px 8px 12px 0px rgba(133, 84, 50, 0.2);
+}
+.planBtn p {
+  color: var(--primary-white, #FFF);
+  text-align: center;
+  /* Text/Button default */
+  font-family: "Poppins-Regular" !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+}
+
+.storiesCard.plan {
+  box-shadow:none;
+}
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .designCard {
+    width: 244px;
+    height: auto;
+    margin: 0 15px;
+  }
+  .designCardCover {
+    height: 340px;
+    margin: 0;
+  }
+  .designCardBox {
+    margin-bottom: 45px;
+    overflow: inherit;
+    flex-direction: row;
+  }
+  .planText {
+    font-size: 45px !important;
+    text-align: center;
+  }
+  .designCard {
+    width: 344px;
+    height: 730px;
+  }
+  .designCardBox > * {
+    flex: 0 0 243px;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .designContainer {
+   /* width: 90%;*/
+  }
+  .designCard {
+    width: 344px;
+    height: 730px;
+  }
+  .designCardCover {
+    margin-bottom: 30px;
+    height: 436px;
+  }
+  .designCardBox {
+    margin-bottom: 100px;
+  }
+  .designCardBox > * {
+    flex: 0 0 344px;
+  }
+  .planBox{
+    margin: 100px auto;
+  }
+}

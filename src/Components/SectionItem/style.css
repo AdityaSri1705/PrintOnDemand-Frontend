@@ -1,0 +1,75 @@
+.coverPopUp {
+    width: 100%;
+    max-width: 1000px;
+    position: fixed;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 9;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    padding: 30px;
+  }
+  .coverPopUpClose {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .coverPopUp.CoverItem .coverPImageBox {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .coverPInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .coverPtext {
+    font-family: "Cormorant", "Times New Roman", "Times", "Baskerville", "Georgia",
+      "serif";
+    font-size: 26px !important;
+  }
+  .GTic {
+    width: 20px !important;
+    height: 20px !important;
+    position: absolute !important;
+    top: 0px;
+    right: 0px;
+  }
+  
+
+  /* Tab view*/
+@media only screen and (min-width: 768px) {
+
+  .coverPopUp {
+    width: 60%;
+    min-width: 775px;
+  }
+  .coverPopUp.CoverItem .coverPImageBox {
+    display: flex;
+    flex-direction: row;
+  }
+  .coverPtext {
+    font-family: "Cormorant", "Times New Roman", "Times", "Baskerville",
+      "Georgia", "serif";
+    font-size: 33px !important;
+  }
+  .coverPInfo {
+    margin-left: 40px;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+    .coverPopUp {
+        min-width: 775px;
+        min-height: 600px;
+        max-width: 1000px;
+        min-width: 833px;
+    }
+}

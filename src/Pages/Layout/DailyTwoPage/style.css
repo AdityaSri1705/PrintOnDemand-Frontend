@@ -1,0 +1,617 @@
+.timeBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.BoxHeaderText {
+  color: var(--greyscale-900, #212121);
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  padding-left: 16px !important;
+  cursor: pointer;
+}
+.choseOneSubText {
+  display: none;
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 140% !important;
+}
+.timeBoxItem {
+  width: 94px;
+  height: 80px;
+  border-radius: 4px;
+  border: 2px solid var(--greyscale-800, #9e9e9e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.timeSBox {
+  width: 18px;
+  height: 14px;
+  margin-bottom: 10px;
+  border: 2px solid #9e9e9e;
+  border-radius: 2px;
+}
+.timeBoxItem p {
+  color: var(--greyscale-900, #9e9e9e);
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}
+.timeBoxItemActive {
+  border: 2px solid var(--greyscale-800, black) !important;
+}
+.timeBoxItemActive p {
+  color: var(--greyscale-900, black);
+}
+.timeSBoxActive {
+  border: 2px solid black !important;
+}
+
+.setTimeBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.setTimeInsideBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.setTimeInRadioBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 12px;
+}
+.setTimeInRadioBox p {
+  color: var(--greyscale-900, #212121);
+  text-align: justify;
+  font-family: "Poppins-Regular" !important;
+  font-size: 11px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  display: flex;
+  align-items: center;
+}
+.weekBox {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #909090;
+  background: #fff;
+  padding: 21px 20px 20px 0px;
+}
+.weekRadioBox {
+  display: flex;
+  flex-direction: row;
+}
+.weekRadioBox p {
+  color: var(--greyscale-900, #212121);
+  text-align: justify;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+  display: flex;
+  align-items: center;
+}
+.TaskListBox {
+  width: 100%;
+  height: auto;
+  padding: 21px 20px 20px 0px;
+  border-radius: 4px;
+  border: 1px solid #909090;
+  background: #fff;
+}
+.taskRadioBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.customRadioBox {
+  display: flex;
+  flex-direction: column;
+}
+.customRadioInputBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.customRadioInputBox svg {
+  cursor: pointer;
+}
+.customRadioInputBoxInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12px;
+}
+.customRadioInputBoxInput input {
+  width: 70%;
+  height: 40px;
+  padding-left: 16px;
+  border-radius: 2px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+}
+.customRadioInputBoxInput input:focus {
+  outline: none;
+}
+.customRadioInputBox p {
+  display: flex;
+  align-items: center;
+}
+.titleSaveButton {
+  width: 82px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 0px 2px 2px 0px;
+  background: #b8845f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.titleSaveButton:hover {
+  background: #9c7050;
+}
+.titleSaveButton p {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 22px !important;
+}
+
+.DailyTB-B0 {
+  position: absolute;
+  top: 2%;
+  left: 4%;
+  height: 4%;
+  width: 51%;
+}
+.DailyTB-B0 img {
+  position: absolute;
+}
+.largeView .DailyTB-B0 img {
+  width: 100% !important;
+}
+
+.DailyTB-B1 {
+  position: absolute;
+  top: 7.5%;
+  left: 4%;
+  width: 51%;
+  height: 4%;
+  display: flex;
+  background: #fff;
+  align-items: baseline;
+}
+.DailyTB-B2 {
+  position: absolute;
+  top: 11%;
+  left: 4%;
+  width: 51%;
+  height: 4%;
+}
+.DailyTB-B3 {
+  position: absolute;
+  top: 15%;
+  left: 4%;
+  width: 51%;
+  height: 81%;
+  background: #fff;
+  overflow: hidden;
+}
+.DailyTB-B4 {
+  position: absolute;
+  top: 3%;
+  right: 8%;
+  width: 35%;
+  height: 18%;
+}
+.DailyTB-B4 img {
+  width: 100% !important;
+}
+.DailyTB-B5 {
+  position: absolute;
+  top: 21%;
+  right: 8%;
+  width: 35%;
+  height: 75%;
+  overflow: hidden;
+  background: #fff;
+}
+.largeview .DailyTB-B5 {
+  width: 35%;
+  right: 8%;
+}
+.largeview .DailyTB-B5 img {
+  width: 100%;
+}
+.DailyTB-B5.shiftup {
+  top: 7%;
+  height: 91.3%;
+}
+.DailyTB-B5-1 {
+  position: absolute;
+  top: 78%;
+  right: 8%;
+  width: 36%;
+  height: 20%;
+}
+.DailyTB-B6 {
+  position: absolute;
+  top: 2%;
+  left: 8%;
+  width: 89%;
+  height: 8%;
+}
+.DailyTB-B7 {
+  position: absolute;
+  overflow: hidden;
+  top: 11%;
+  left: 9%;
+  width: 87%;
+  height: 15%;
+}
+.largeview .DailyTB-B7 {
+  left: 8%;
+  width: 87%;
+}
+.DailyTB-B8 {
+  position: absolute;
+  overflow: hidden;
+  top: 28%;
+  left: 9%;
+  width: 87%;
+  height: 16%;
+}
+.largeview .DailyTB-B8 {
+  left: 8%;
+  width: 87%;
+}
+.DailyTB-B9 {
+  position: absolute;
+  overflow: hidden;
+  top: 45.5%;
+  left: 9%;
+  width: 87%;
+  height: 16%;
+}
+.largeview .DailyTB-B9 {
+  left: 8%;
+  width: 87%;
+}
+.DailyTB-B10 {
+  position: absolute;
+  overflow: hidden;
+  top: 63%;
+  left: 9%;
+  width: 87%;
+  height: 16%;
+}
+.largeview .DailyTB-B10 {
+  left: 8%;
+  width: 87%;
+}
+.DailyTB-B11 {
+  position: absolute;
+  overflow: hidden;
+  top: 80%;
+  left: 9%;
+  width: 87%;
+  height: 16%;
+}
+.largeview .DailyTB-B11 {
+  left: 8%;
+  width: 87%;
+}
+
+/* customPreviewBox */
+
+.TopLeft {
+  position: absolute;
+  top: 36px;
+  left: 9%;
+  width: 45%;
+  height: 6%;
+}
+.DailyTwoRightText {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  font-size: 4px !important;
+  color: #212121;
+  font-family: "JosefinSans" !important;
+  font-style: normal;
+  font-weight: 900 !important;
+  line-height: 8px !important;
+  word-wrap: break-word;
+  text-transform: uppercase;
+}
+.DailyTwoRightActiveText {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  font-size: 12px !important;
+  color: #212121;
+  font-family: "JosefinSans" !important;
+  font-style: normal;
+  font-weight: 900 !important;
+  line-height: 8px !important;
+  word-wrap: break-word;
+  text-transform: uppercase;
+}
+.ctext-113 {
+  left: 0px;
+  top: 2px;
+}
+.ctext-114 {
+  top: -2px;
+  left: 1px;
+}
+.ctext-115 {
+  top: -3px;
+  left: 0px;
+}
+.ctext-113 {
+  left: 0px;
+  top: 4px;
+}
+.largeview  .ctext-113 {
+  top: 4px;
+  left: 0px;
+}
+.largeview  .ctext-114 {
+  top: 4px;
+  left: 1px;
+}
+.largeview  .ctext-115 {
+  top: 4px;
+  left: 0px;
+}
+/* .DailyTB-B8.LineContinue {
+  top: 27%;
+  height: 18%;
+} */
+.DailyTB-B10.LineContinue {
+  top: 62%;
+  height: 18%;
+}
+.DTC_binder {
+  width: 18% !important;
+  position: absolute;
+  top: 0;
+  left: -14%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .DTC_binder {
+    width: 18% !important;
+    left: -12%;
+  }
+  .ctext-113 {
+    left: 0px;
+    top: 2px;
+  }
+  .ctext-114 {
+    top: 0px;
+    left: 1px;
+  }
+  .ctext-115 {
+    top: 0px;
+    left: 0px;
+  }
+}
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .setTimeInRadioBox p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+  }
+  .TopLeft {
+    position: absolute;
+    top: 14px;
+    left: 18px;
+    width: 45%;
+    height: 6%;
+  }
+  .TopLeftDText {
+    top: -1px;
+    left: 8px;
+    font-size: 8px !important;
+  }
+  .TopRight {
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    width: 45%;
+    height: 7%;
+  }
+  .BottomRight {
+    bottom: 18px;
+  }
+  .DailyTwoRightText {
+    font-size: 7pt !important;
+  }
+  .DailyTwoRightActiveText {
+    font-size: 7pt !important;
+  }
+  .ctext-113 {
+    left: 0px;
+    top: 4px;
+  }
+  .ctext-114 {
+    top: 4px;
+    left: 1px;
+  }
+  .ctext-115 {
+    top: 4px;
+    left: 0px;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .timeBoxItem {
+    width: 126px;
+    height: 104px;
+  }
+  .timeBoxItem p {
+    font-size: 16px !important;
+  }
+  .choseOneSubText {
+    display: block;
+  }
+  .customPageBottomBox {
+    padding: 7px 20px 20px 0px;
+  }
+  .leftCustomArrow {
+    top: 23px;
+  }
+  .TopLeft {
+    position: absolute;
+    top: 36px;
+    left: 9%;
+    width: 45%;
+    height: 6%;
+  }
+  .TopLeftDText {
+    top: 8px;
+    left: 15px;
+    font-size: 14px !important;
+  }
+  .TopRight {
+    top: 36px;
+    right: 14px;
+    width: 45%;
+    height: 7%;
+  }
+  .BottomRight {
+    position: absolute;
+    bottom: 44px;
+    right: 0px;
+    width: 35%;
+    height: 20%;
+  }
+  .DailyTB-B5.shiftup {
+    height: 92%;
+    right: 8%;
+    top: 4%;
+  }
+
+  .DailyTwoRightText {
+    font-size: 9pt  !important;
+  }
+  .DailyTwoRightActiveText {
+    font-size: 9pt !important;
+  }
+  .ctext-113 {
+    top: 4px;
+    left: 1px;
+  }
+  .ctext-114 {
+    top: 4px;
+    left: 1px;
+  }
+  .ctext-115 {
+    top: 4px;
+    left: 0px;
+  }
+  .largeview .DailyTB-B7 {
+    left: 9%;
+    width: 87%;
+  }
+  .largeview .DailyTB-B8 {
+    left: 9%;
+    width: 87%;
+  }
+  .largeview .DailyTB-B9 {
+    left: 9%;
+    width: 87%;
+  }
+  .largeview .DailyTB-B10 {
+    left: 9%;
+    width: 87%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .DTC_binder {
+    width: 19% !important;
+    left: -11%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .DailyTB-B0 {
+    width: 51.7%;
+  }
+  .DailyTB-B2 {
+    width: 51.7%;
+    height: 2.5%;
+  }
+  .DailyTB-B3 {
+    width: 49%;
+    height: 80.9%;
+  }
+  .DailyTB-B5 {
+    top: 23%;
+    width: 35%;
+    height: 73%;
+  }
+  .DailyTB-B6 {
+    width: 83.2%;
+  }
+  .DailyTB-B7 {
+    width: 86.2%;
+    height: 15.6%;
+  }
+  .DailyTB-B8 {
+    width: 86.2%;
+    height: 15.6%;
+  }
+  .DailyTB-B9 {
+    width: 86.2%;
+    height: 15.6%;
+  }
+  .DailyTB-B10 {
+    width: 86.2%;
+    height: 15.6%;
+  }
+  .DailyTB-B11 {
+    width: 86.2%;
+    height: 15.6%;
+  }
+  .DailyTB-B0 img {
+    width: auto !important;
+  }
+  .DailyTB-B2 img {
+    width: auto !important;
+  }
+  .DailyTB-B8 {
+    width: 86.2%;
+    height: 15.6%;
+  }
+}

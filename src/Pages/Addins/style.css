@@ -1,0 +1,77 @@
+.VisionAndGoalBtnBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.temCardBtnBox {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.temCountText {
+  color: #b8845f;
+  text-align: center;
+  font-family: "Montserrat" !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 22px !important;
+}
+.temCardTopBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.week_Box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TemplateContainerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+.templateBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 16px;
+  
+}
+.templateHeader {
+  color: #313030;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  text-align: center;
+  margin-bottom: 10px !important;
+}
+.addins .dp1{
+  position: absolute;
+  left: 4%;
+  right: 8%;
+  top: 3%;
+  bottom: 3%;
+}
+.addins .dp2{
+  position: absolute;
+  left: 8%;
+  right: 4%;
+  top: 3%;
+  bottom: 3%;
+}
+.PreviewContainer.addins .dp1 img,
+.PreviewContainer.addins .dp2 img{
+  width:100%
+}

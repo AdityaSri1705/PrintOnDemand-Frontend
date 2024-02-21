@@ -1,0 +1,198 @@
+.coverPopUp {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    position: fixed;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 9;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    padding: 30px;
+  }
+  .coverPopUpClose {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .coverPopUp.UploadPopup .coverPImageBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .coverPInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .coverPtext {
+    font-family: "Cormorant", "Times New Roman", "Times", "Baskerville", "Georgia",
+      "serif";
+    font-size: 26px !important;
+  }
+  .GTic {
+    width: 20px !important;
+    height: 20px !important;
+    position: absolute !important;
+    top: 9px;
+    right: 9px;
+  }
+  
+
+  .crop-container {
+    position: relative;
+    width: 400px; /* Set the width as per your design */
+    height: 300px; /* Set the height as per your design */
+  }
+  
+  .crop-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay{
+    border: 2px dashed #F00;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+  }
+  .overlay.off{
+    display: none;
+  }
+  
+  .bleed-line-horizontal,
+  .bleed-line-vertical {
+    position: absolute;
+    /*background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red color */
+  }
+  
+  .bleed-line-horizontal {
+    width: 100%;
+    height: 1px; /* Adjust the thickness of the bleed line */
+    top: 50%;
+    left: 0;
+  }
+  
+  .bleed-line-vertical {
+    width: 1px; /* Adjust the thickness of the bleed line */
+    height: 100%;
+    top: 0;
+    left: 50%;
+  }
+
+  
+
+  /* Tab view*/
+@media only screen and (min-width: 768px) {
+
+  .coverPopUp {
+    width: 60%;
+    min-width: 775px;
+  }
+  .coverPopUp.UploadPopup .coverPImageBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .coverPtext {
+    font-family: "Cormorant", "Times New Roman", "Times", "Baskerville",
+      "Georgia", "serif";
+    font-size: 33px !important;
+  }
+  .coverPInfo {
+    margin-left: 40px;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+    .coverPopUp {
+        min-width: 775px;
+        min-height: 300px;
+        max-width: 1000px;
+        min-width: 833px;
+    }
+}
+
+.UploadBtn{
+  position: relative;
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+  color: #656571;
+  width: 38px;
+  height: auto;
+  font-size: 10px;
+  text-transform: capitalize;
+  opacity: .5;
+  background: 0 0;
+  border: 0;
+  margin-right: 16.21px;
+  cursor: pointer;
+}
+.UploadBtn.cover{
+  
+  padding-top: 32px;
+}
+.UploadBtn.active{
+  opacity: 1;
+  color: #000000;
+}
+.UploadBtn.cover::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 20px;
+  width: 26px;
+  border: #000000 1px solid;
+  border-radius: 2px;
+}
+.UploadBtn.cover.active::before {
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 36px;
+}
+.UploadBtn .inner{
+  height: 35px;
+}
+.UploadBtn svg path{
+  fill: #888B9B;
+}
+.UploadBtn.active svg path{
+  fill: #414244
+}
+.duplicate-to-other-side {
+  border-left: 1px solid #000000;
+}
+.duplicate-to-other-side .UploadBtn{
+  width: 96px;
+}
+.UploadBtn.bleed{
+  width: 75px;
+}
+.coverPopUp .btnContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.uploadFrontElement,
+.uploadBackElement{
+  padding:50px;
+}
+.cropped-img{
+  max-width: 400px;
+  max-height: 400px;
+}

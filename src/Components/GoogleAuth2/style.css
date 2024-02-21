@@ -1,0 +1,22 @@
+.googleButton  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 71px;
+    border-radius: 7px !important;
+    border: 1px solid #f0f0f0 !important;
+    background: #fff;
+    box-shadow: none !important;
+} 
+.googleButton span {
+    color: #040404;
+    text-align: center;
+    font-family: "Poppins-Regular" !important;
+    font-size: 15px !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 150% !important;
+    letter-spacing: 1.2px !important;
+  }

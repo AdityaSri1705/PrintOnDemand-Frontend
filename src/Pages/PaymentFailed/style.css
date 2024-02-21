@@ -1,0 +1,37 @@
+.PaymentArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.PaymentTextTab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.PaymentText1{
+  color: #1a1a1a;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}
+.PaymentText2{
+  color: #0d68f1;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+}
+.PaymentText3{
+  color: #1a1a1a;
+  font-family: "Poppins-Regular" !important;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}

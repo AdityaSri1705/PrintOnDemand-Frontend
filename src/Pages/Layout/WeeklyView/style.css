@@ -1,0 +1,1036 @@
+.timeBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.BoxHeaderText {
+  color: var(--greyscale-900, #212121);
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  padding-left: 14px !important;
+  cursor: pointer;
+}
+.choseOneSubText {
+  display: none;
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 140% !important;
+}
+.preweek-para {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #272626;
+  margin: 25px 0;
+}
+.timeBoxItemWeekly {
+  width: 48%;
+  height: 80px;
+  border-radius: 4px;
+  border: 2px solid var(--greyscale-800, #9e9e9e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.timeSBox {
+  width: 18px;
+  height: 14px;
+  margin-bottom: 10px;
+  border: 2px solid #9e9e9e;
+  border-radius: 2px;
+}
+.timeBoxItemWeekly p {
+  color: var(--greyscale-900, #9e9e9e);
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}
+.timeBoxItemActive {
+  border: 2px solid var(--greyscale-800, black) !important;
+}
+.timeBoxItemActive p {
+  color: var(--greyscale-900, black);
+}
+.timeSBoxActive {
+  border: 2px solid black !important;
+}
+.customOption {
+  width: 100%;
+  height: 46px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #909090;
+  background: #fff;
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+.customPopUpList {
+  width: 100%;
+  position: absolute;
+  top: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.customPopUpListItem {
+  height: 34px;
+  border: 1px solid gray;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s;
+}
+.customPopUpListItem:hover {
+  background: #c9c9c9;
+}
+.customOption p {
+  color: #7c7c7c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 132% !important;
+}
+.customOptionDownArrow {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  cursor: pointer;
+}
+.LayoutSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 20px;
+}
+.setWeeklyTimeBox {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #909090;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.setWeeklyTimeInsideBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.setTimeInRadioBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.setTimeInRadioBox p {
+  color: var(--greyscale-900, #212121);
+  text-align: justify;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  display: flex;
+  align-items: center;
+}
+.weekBox {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #909090;
+  background: #fff;
+  padding: 21px 20px 20px 0px;
+}
+.weekRadioBox {
+  display: flex;
+  flex-direction: row;
+}
+.weekRadioBox p {
+  color: var(--greyscale-900, #212121);
+  text-align: justify;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+  display: flex;
+  align-items: center;
+}
+.TaskListBox {
+  width: 100%;
+  height: auto;
+  padding: 21px 20px 20px 0px;
+  border-radius: 4px;
+  border: 1px solid #909090;
+  background: #fff;
+}
+.taskRadioBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.customRadioBox {
+  display: flex;
+  flex-direction: column;
+}
+.customRadioInputBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.customRadioInputBox svg {
+  cursor: pointer;
+}
+.customRadioInputBoxInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12px;
+}
+.customRadioInputBoxInput input {
+  width: 70%;
+  height: 40px;
+  padding-left: 16px;
+  border-radius: 2px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+}
+.customRadioInputBoxInput input:focus {
+  outline: none;
+}
+.customRadioInputBox p {
+  display: flex;
+  align-items: center;
+}
+.titleSaveButton {
+  width: 82px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 0px 2px 2px 0px;
+  background: #b8845f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.titleSaveButton:hover {
+  background: #9c7050;
+}
+.titleSaveButton p {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 22px !important;
+}
+
+/* customPreviewBox */
+
+.WeeklyDateBTitle {
+  font-size: 4px !important;
+  color: #212121;
+  font-family: "JosefinSans" !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal !important;
+  text-transform: uppercase;
+}
+.largeview .WeeklyDateBTitle {
+  font-size: 18px !important;
+}
+.WeeklyDateSTitle {
+  font-size: 6px !important;
+  color: #212121;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.LPLeft {
+  position: absolute;
+  left: 4%;
+}
+.LPRight {
+  position: absolute;
+  right: 8%;
+}
+.RPLeft {
+  position: absolute;
+  left: 8%;
+}
+.RPRight {
+  position: absolute;
+  right: 4%;
+  left: auto !important;
+}
+.PBottom {
+  bottom: 3%;
+}
+.WeeklyView-B0 {
+  top: 4%;
+  width: 48%;
+  height: 9%;
+  display: flex;
+  align-items: center;
+}
+
+.WeeklyView-B1 {
+  top: 4%;
+  right: 8%;
+  width: 40.9%;
+  height: 7.6%;
+}
+.WeeklyView-B2 {
+  top: 13%;
+  left: 4%;
+  width: 88%;
+  height: 13.5%;
+}
+/* .WeeklyView-B3-left {
+  bottom: 4%;
+  left: 4%;
+  width: 27.8%;
+  height: 84%;
+  overflow: hidden;
+} */
+.WeeklyView-B3-left {
+  bottom: 4%;
+  left: 4%;
+  width: 26.8%;
+  height: 68.6%;
+  overflow: hidden;
+}
+.WeeklyView-B3 {
+  /* top: 28%; */
+  bottom: 4%;
+  width: 56%;
+  height: 68.6%;
+}
+.WeeklyView-B4 {
+  width: 42%;
+  height: 13%;
+  display: none;
+}
+.WeeklyView-B5 {
+  width: 42%;
+  height: 17%;
+  display: none;
+}
+.WeeklyView-B6 {
+  top: 4%;
+  width: 41.8%;
+  height: 7.8%;
+}
+.WeeklyView-B7 {
+  top: 4%;
+  width: 41.8%;
+  height: 7.8%;
+}
+.WeeklyView-B8 {
+  top: 12%;
+  width: 88%;
+  height: 13.5%;
+}
+.WeeklyView-B9 {
+  bottom: 4%;
+  width: 56%;
+  height: 68.8%;
+}
+.WeeklyView-B9-right {
+  top: 27.5%;
+  width: 27.8%;
+  height: 54%;
+  overflow: hidden;
+}
+.T1 .WeeklyView-B10 {
+  width: 41.9%;
+  height: 17.7%;
+  left: 8% !important;
+  bottom: 4%;
+}
+.T2 .WeeklyView-B10 {
+  width: 27.5%;
+  height: 14.5%;
+  bottom: 4%;
+}
+
+.T2 .WeeklyView-B11 {
+  display: none;
+}
+.T1 .WeeklyView-B11 {
+  width: 41.9%;
+  height: 17.7%;
+  bottom: 4%;
+}
+.T1 .WeeklyView-B2,
+.T5 .WeeklyView-B2,
+.T6 .WeeklyView-B2,
+.T1 .WeeklyView-B8,
+.T5 .WeeklyView-B8,
+.T6 .WeeklyView-B1,
+.T6 .WeeklyView-B7,
+.T6 .WeeklyView-B8 {
+  display: none;
+}
+.T1 .WeeklyView-B3 {
+  bottom: 4%;
+  height: 84%;
+}
+.T1 .WeeklyView-B3-left {
+  bottom: 4%;
+  left: 4%;
+  width: 27.8%;
+  height: 84%;
+}
+.T1 .WeeklyView-B9 {
+  top: 12%;
+  height: 65%;
+}
+.T1 .WeeklyView-B9-right {
+  top: 12%;
+  height: 63.2%;
+}
+
+.T3 .WeeklyView-B3-left,
+.T4 .WeeklyView-B3-left,
+.T5 .WeeklyView-B3-left,
+.T6 .WeeklyView-B3-left,
+.T3 .WeeklyView-B9-right,
+.T4 .WeeklyView-B9-right,
+.T5 .WeeklyView-B9-right,
+.T6 .WeeklyView-B9-right {
+  display: none;
+}
+.T5 .WeeklyView-B7 {
+  display: block;
+}
+.T3 .WeeklyView-B3,
+.T4 .WeeklyView-B3,
+.T5 .WeeklyView-B3,
+.T6 .WeeklyView-B3,
+.T3 .WeeklyView-B9,
+.T4 .WeeklyView-B9,
+.T5 .WeeklyView-B9,
+.T6 .WeeklyView-B9 {
+  width: 88%;
+}
+
+.T3 .WeeklyView-B10,
+.T4 .WeeklyView-B10,
+.T5 .WeeklyView-B10 {
+  position: absolute;
+  left: 8%;
+  width: 44%;
+  height: 16%;
+  bottom: 4%;
+}
+.T3 .WeeklyView-B11,
+.T4 .WeeklyView-B11,
+.T5 .WeeklyView-B11 {
+  display: none;
+}
+.T5 .WeeklyView-B2,
+.T6 .WeeklyView-B2,
+.T5 .WeeklyView-B8,
+.T6 .WeeklyView-B8 {
+  top: 10%;
+  height: 87%;
+}
+.T3 .WeeklyView-B3,
+.T4 .WeeklyView-B3,
+.T3 .WeeklyView-B9,
+.T4 .WeeklyView-B9 {
+  bottom: 4%;
+  width: 88%;
+  height: 68%;
+}
+.T5 .WeeklyView-B3,
+.T5 .WeeklyView-B9 {
+  top: 12%;
+  height: 85%;
+}
+.T3 .WeeklyView-B10,
+.T4 .WeeklyView-B10,
+.T5 .WeeklyView-B10 {
+  height: 10.3%;
+  right: 4% !important;
+  width: 27.5%;
+}
+.T6 .WeeklyView-B0 {
+  height: 6%;
+}
+.T6 .WeeklyView-B3 {
+  top: 12%;
+  height: 68%;
+  left: 4%;
+}
+.T6 .WeeklyView-B4 {
+  bottom: 3%;
+  height: 14.5%;
+  display: block;
+}
+.T6 .WeeklyView-B5 {
+  bottom: 3%;
+  height: 14.5%;
+  display: block;
+}
+.T6 .WeeklyView-B6 {
+  height: 9%;
+  width: 89%;
+}
+.T6 .WeeklyView-B9 {
+  top: 12%;
+  height: 68%;
+}
+.T6 .WeeklyView-B10 {
+  left: 8% !important;
+  width: 42%;
+  bottom: 3%;
+  height: 14.5%;
+}
+.T6 .WeeklyView-B11 {
+  width: 42%;
+  bottom: 3%;
+  height: 14.5%;
+}
+
+.WeeklyViewCustomText {
+  font-size: 4px !important;
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  color: #212121;
+  font-family: "JosefinSans" !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal !important;
+  word-wrap: break-word;
+  text-transform: uppercase;
+}
+.WeeklyView-B3 .WeeklyDateBTitle,
+.WeeklyView-B9 .WeeklyDateBTitle {
+  font-size: 7px !important;
+  font-weight: 400;
+}
+.WeeklyDateDTitle {
+  font-size: 4px !important;
+  color: #212121;
+  font-family: "JosefinSans" !important;
+  font-style: normal;
+  line-height: normal !important;
+  margin-right: 2px !important;
+}
+.largeview .WeeklyDateDTitle {
+  font-size: 12px !important;
+}
+.largeview .WeeklyDateNTitle {
+  font-size: 12px !important;
+}
+
+.WeeklyDateNTitle {
+  font-size: 4px !important;
+  color: #212121;
+  font-family: "JosefinSans" !important;
+  font-style: normal;
+  line-height: normal !important;
+  text-transform: uppercase;
+}
+.rightpage .WeeklyDateNTitle {
+  margin-right: 2px;
+}
+.rightpage .WeeklyDateDTitle {
+  margin-right: 0 !important;
+}
+
+.d1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  display: flex;
+  align-items: baseline;
+  width: 25%;
+}
+.d2 {
+  position: absolute;
+  top: 32%;
+  left: 0;
+  background: #fff;
+  display: flex;
+  align-items: baseline;
+  width: 25%;
+}
+.d3 {
+  position: absolute;
+  top: 63%;
+  left: 0;
+  background: #fff;
+  display: flex;
+  align-items: baseline;
+  width: 25%;
+}
+.d4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background: #fff;
+  align-items: baseline;
+  width: 25%;
+}
+.d5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  align-items: baseline;
+  width: 24%;
+  justify-content: right;
+}
+.d6 {
+  position: absolute;
+  top: 32%;
+  right: 0;
+  background: #fff;
+  display: flex;
+  align-items: baseline;
+  width: 24%;
+  justify-content: right;
+}
+.d7 {
+  position: absolute;
+  top: 63%;
+  right: 0;
+  background: #fff;
+  display: flex;
+  align-items: baseline;
+  width: 24%;
+  justify-content: right;
+}
+.d8 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  background: #fff;
+  width: 24%;
+  justify-content: right;
+}
+
+.T2 .d1 {
+  top: 1%;
+}
+.T2 .d2 {
+  top: 35%;
+}
+.T2 .d3 {
+  top: 69%;
+}
+.T2 .d5 {
+  top: 1%;
+}
+.T2 .d6 {
+  top: 35%;
+}
+.T2 .d7 {
+  top: 69%;
+  right: 51%;
+}
+.T2 .d8 {
+  top: 69%;
+  right: 0;
+  display: flex;
+}
+
+.T1 .d1 {
+  top: 2%;
+  left: 0;
+}
+.T1 .d2 {
+  top: 27%;
+  left: 0;
+}
+.T1 .d3 {
+  top: 52%;
+  left: 0;
+}
+.T1 .d4 {
+  display: flex;
+  top: 77%;
+  left: 0;
+}
+.T1 .d5 {
+  top: 2%;
+}
+.T1 .d6 {
+  top: 34%;
+}
+.T1 .d7 {
+  top: 67%;
+}
+
+.T3 .d1,
+.T4 .d1,
+.T5 .d1 {
+  top: 2%;
+}
+.T3 .d2,
+.T4 .d2,
+.T5 .d2 {
+  top: 2%;
+  left: 34%;
+}
+.T3 .d3,
+.T4 .d3,
+.T5 .d3 {
+  top: 2%;
+  left: 68%;
+}
+.T3 .d5,
+.T4 .d5,
+.T5 .d5 {
+  top: 2%;
+  right: 68%;
+}
+.T3 .d6,
+.T4 .d6,
+.T5 .d6 {
+  top: 2%;
+  right: 34%;
+}
+.T3 .d7,
+.T4 .d7,
+.T5 .d7 {
+  top: 2%;
+  right: 0%;
+}
+.T3 .d8,
+.T4 .d8 {
+  top: 45%;
+  display: flex;
+  right: 2%;
+}
+.T5 .d8 {
+  top: 46.5%;
+  display: flex;
+}
+
+.T6 .d1 {
+  top: 0;
+}
+.T6 .d2 {
+  top: 0;
+  left: 25%;
+}
+.T6 .d3 {
+  top: 0;
+  left: 50.5%;
+}
+.T6 .d4 {
+  top: 0;
+  left: 76%;
+  display: flex;
+}
+.T6 .d5 {
+  top: 0;
+  right: 76%;
+}
+.T6 .d6 {
+  top: 0;
+  right: 51%;
+}
+.T6 .d7 {
+  top: 0;
+  right: 25%;
+}
+.largeview .WeeklyDateSTitle {
+  font-size: 10px !important;
+}
+
+.largeview .T2 .d1 {
+  top: 1%;
+}
+.largeview .T2 .d3 {
+  top: 69%;
+}
+
+
+
+.largeview .T6 .d1 {
+  top: 1%;
+}
+.largeview .T6 .d2 {
+  top: 1%;
+  left: 25%;
+}
+.largeview .T6 .d3 {
+  top: 1%;
+  left: 50.5%;
+}
+.largeview .T6 .d4 {
+  top: 1%;
+  left: 76%;
+  display: flex;
+}
+.largeview .T6 .d5 {
+  top: 1%;
+  right: 76%;
+}
+.largeview .T6 .d6 {
+  top: 1%;
+  right: 51%;
+}
+.largeview .T6 .d7 {
+  top: 1%;
+  right: 25%;
+}
+
+.T2.BlockTime .d1 {
+  top: 0;
+}
+.T2.BlockTime .d2 {
+  top: 34%;
+}
+
+.T2.BlockTime .d3 {
+  top: 68%;
+}
+.T2.BlockTime .d6 {
+  top: 34%;
+  right: 0;
+}
+.T2.BlockTime .d8 {
+  top: 68%;
+  right: 0;
+}
+
+.T2.BlockTime .d5 {
+  top: 0;
+  right: 0;
+}
+.T2.BlockTime .d7 {
+  top: 68%;
+  right: 51%;
+}
+.largeview .PageSubImages {
+  width: auto;
+  max-height: none;
+}
+.QuoteText {
+  margin-bottom: 0% !important;
+  line-height: 100% !important;
+}
+.T5.BlockTime .d8 {
+  top: 46%;
+  right: 4%;
+  display: flex;
+}
+
+.T3.BlockTime .d1,
+.T4.BlockTime .d1,
+.T5.BlockTime .d1,
+.T3.BlockTime .d2,
+.T4.BlockTime .d2,
+.T5.BlockTime .d2,
+.T3.BlockTime .d3,
+.T4.BlockTime .d3,
+.T5.BlockTime .d3,
+.T3.BlockTime .d5,
+.T4.BlockTime .d5,
+.T5.BlockTime .d5,
+.T3.BlockTime .d6,
+.T4.BlockTime .d6,
+.T5.BlockTime .d6,
+.T3.BlockTime .d7,
+.T4.BlockTime .d7,
+.T5.BlockTime .d7 {
+  top: 2%;
+}
+
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .setTimeInRadioBox p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+  }
+  .WeeklyDateBTitle {
+    font-size: 6px !important;
+  }
+  .WeeklyDateDTitle {
+    font-size: 6px !important;
+  }
+  .WeeklyDateNTitle {
+    font-size: 6px !important;
+  }
+  .PBottom {
+    bottom: 3%;
+  }
+  .WeeklyView-B8 {
+    top: 13%;
+  }
+
+  .T5 .WeeklyView-B3,
+  .T5 .WeeklyView-B9 {
+    top: 12%;
+  }
+
+  .WeeklyViewCustomText {
+    font-size: 6pt !important;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .WeeklyDateBTitle {
+    font-size: 10px !important;
+  }
+  .WeeklyDateDTitle {
+    font-size: 8px !important;
+  }
+  .WeeklyDateNTitle {
+    font-size: 8px !important;
+  }
+  .WeeklyViewCustomText {
+    font-size: 9pt !important;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .T6 .d1 {
+    top: 1%;
+  }
+  .T6 .d2 {
+    top: 1%;
+    left: 26%;
+  }
+  .T6 .d3 {
+    top: 1%;
+    left: 51%;
+  }
+  .T6 .d4 {
+    top: 1%;
+    left: 76%;
+    display: flex;
+  }
+  .T6 .d5 {
+    top: 1%;
+    right: 76%;
+  }
+  .T6 .d6 {
+    top: 1%;
+    right: 50.5%;
+  }
+  .T6 .d7 {
+    top: 1%;
+    right: 25%;
+  }
+  .timeBoxItemWeekly {
+    width: 46%;
+    height: 104px;
+  }
+  .timeBoxItemWeekly p {
+    font-size: 16px !important;
+  }
+  .choseOneSubText {
+    display: block;
+  }
+  .WeeklyDateBTitle {
+    font-size: 18px !important;
+  }
+  .WeeklyDateSTitle {
+    font-size: 10px !important;
+  }
+  .WeeklyDateDTitle {
+    font-size: 12px !important;
+  }
+  .WeeklyDateNTitle {
+    font-size: 12px !important;
+  }
+  .PBottom {
+    bottom: 3%;
+  }
+  .WeeklyView-B5 {
+    display: none;
+  }
+  .WeeklyView-B8 {
+    top: 13%;
+  }
+
+  .T3 .WeeklyView-B3,
+  .T4 .WeeklyView-B3,
+  .T5 .WeeklyView-B3 {
+    bottom: 4%;
+    left: 4%;
+  }
+  .T3 .WeeklyView-B9,
+  .T4 .WeeklyView-B9,
+  .T5 .WeeklyView-B9 {
+    bottom: 4%;
+    width: 88%;
+  }
+  .T5 .WeeklyView-B3,
+  .T5 .WeeklyView-B9 {
+    top: 12%;
+    height: 84%;
+  }
+  .T6 .WeeklyView-B0 {
+    height: 7%;
+  }
+
+  .T1.BlockTime .d1 {
+    top: 2%;
+  }
+  .T1.BlockTime .d2 {
+    top: 27%;
+  }
+  .T1.BlockTime .d3 {
+    top: 52%;
+  }
+  .T1.BlockTime .d4 {
+    top: 77%;
+  }
+  .T1.BlockTime .d5 {
+    top: 2%;
+  }
+  .T1.BlockTime .d6 {
+    top: 34%;
+  }
+  .T1.BlockTime .d7 {
+    top: 67%;
+  }
+
+  .WeeklyViewCustomText {
+    font-size: 9pt !important;
+  }
+}

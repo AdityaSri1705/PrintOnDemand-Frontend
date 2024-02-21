@@ -1,0 +1,197 @@
+.storiesContainer {
+  width: 100%;
+  margin-bottom: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.storiesHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.storiesHeader p {
+  color: #646464;
+  font-family: "Poppins-Regular" !important;
+  font-size: 38px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 124% !important;
+}
+.storiesBox {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.storiesBox > * {
+  flex: 0 0 100%;
+}
+.storiesCard {
+  width: 1073px;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 4px 60px 0px rgba(4, 6, 15, 0.05);
+}
+.storiesCard.plan{
+  padding: 20px;
+  width: 100%;
+}
+
+.coverBox {
+  width: 100%;
+}
+.coverBox img {
+  width: 100%;
+}
+.storiesTextBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.comaIcon {
+  position: absolute;
+  right: 120px;
+}
+.userInfoBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.userInfoBox .userImage img{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.userBox {
+  padding: 12px;
+}
+.userTextBox p {
+  color: #808080;
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}
+.navigateBtnBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.userName {
+  color: #646464;
+  font-family: "Poppins-Regular" !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 140% !important;
+}
+.userLink {
+  color: #b8845f;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 22px !important;
+}
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -10px;
+  right: 7px;
+}
+.arrowDisabled {
+  pointer-events: none;
+  /* opacity: 0.5; */
+  cursor: not-allowed;
+}
+.ScrollBtn {
+  display: block;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .storiesCard {
+    flex-direction: row;
+    padding: 44px;
+    /* margin-right: 50px; */
+  }
+  .storiesCard.plan{
+    padding: 44px;
+    width: 100%;
+  }
+  .storiesCard.plan .storiesTextBox{
+    padding: 30px;
+  }
+  .padding2nd {
+    padding-right: 45;
+  }
+  .coverBox {
+    margin-right: 0px;
+  }
+  .storiesTextBox {
+    width: 70%;
+    padding: 0;
+  }
+  .userBox {
+    padding: 30px;
+  }
+  .navigateBtnBox {
+    justify-content: flex-end;
+  }
+  .storiesHeader p {
+    font-size: 45px !important;
+  }
+  .buttonBox {
+    right: 35px;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .buttonBox {
+    right: 230px;
+  }
+  .storiesBox {
+    width: 90%;
+  }
+  .coverBox {
+    width: 30%;
+  }
+  .storiesCard {
+    width: 100%;
+    flex-direction: row;
+    padding: 44px;
+    /* margin-right: 50px; */
+  }
+  .padding2nd {
+    padding-right: 125px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .storiesContainer {
+    width: 100%;
+  }
+}

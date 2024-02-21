@@ -1,0 +1,270 @@
+
+.yearAndMonthBox{
+  width: 100%;
+}
+.yearAndMonthTab {
+  width: 100%;
+  height: 56px;
+  border-radius: 2px;
+  background: var(--primary-gray, #e4e5e1);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.yearAndMonthTab p {
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}
+.monthlyTab, .yearTab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.monthlyTab {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+.activeTab {
+  background: #fff;
+  width: 45%;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.CalenderRadioBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.CalRHeader P {
+  color: #313030;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  text-align: center;
+}
+.fontBackRadioBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
+}
+.fontBRadioInput {
+  display: flex;
+  flex-direction: row;
+}
+.templateHeader {
+  color: #313030;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  text-align: center;
+}
+.templateBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+.templateCardBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.templateCard {
+  width: 164px;
+  height: 192.05px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 10px 0;
+}
+.templateCardImageBox img {
+  width: 100%;
+  height: 100%;
+}
+.templateCard p {
+  color: var(--greyscale-900, #212121);
+  text-align: center;
+
+  /* Text/Body 2 */
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}
+.templateCardRadio {
+  position: absolute !important;
+  top: -3px;
+  right: 7px;
+}
+.pageQuantity {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.pageCountHeader {
+  color: #313030;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  margin-bottom: 16px !important;
+  text-align: center;
+}
+.pageCountBox {
+  display: flex;
+  padding: 12px 31px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  border: 1px solid #bab8b8;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.pageCountBox P {
+  color: var(--greyscale-900, #212121);
+  font-family: "Poppins-Regular" !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 140% !important;
+}
+
+.calenderCover {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.CalenderRadioBox .setTimeInRadioBox {
+  justify-content: start;
+}
+.calendar .dp1 {
+  position: absolute;
+  left: 4%;
+  right: 8%;
+  top: 3%;
+  bottom: 3%;
+}
+.calendar .dp2 {
+  position: absolute;
+  left: 8%;
+  right: 4%;
+  top: 3%;
+  bottom: 3%;
+}
+.PreviewContainer.calendar .dp1 img,
+.PreviewContainer.calendar .dp2 img{
+  width:100%
+}
+.monthname{
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #212121;
+  font-family: "JosefinSans" !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  text-transform: uppercase;
+  margin-right: 3px !important;
+  font-size: 1rem;
+  background: #FFF;
+  width: 100%;
+}
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+ 
+  .calenderSideMenu {
+    width: 310px;
+    height: 747px;
+    margin-right: 15px;
+    padding-right: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .CSideHeader {
+    font-size: 19px !important;
+  }
+  .calenderContainer {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  .CalRHeader P {
+    text-align: start;
+  }
+  .fontBackRadioBox {
+    flex-direction: column;
+  }
+  .templateCard {
+    width: 180px;
+    height: 192.05px;
+    margin: 25px 0;
+  }
+  .templateHeader {
+    text-align: start;
+  }
+  .pageCountHeader {
+    text-align: start;
+  }
+  .calenderCover {
+    width: 60%;
+    margin-left: 15px;
+    margin-top: 0;
+  }
+  .pageCountBox {
+    gap:33px;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  
+  .calenderSideMenu {
+    width: 405px;
+    margin-right: 5px;
+  }
+  .CSideHeader {
+    font-size: 26px !important;
+  }
+  .yearAndMonthTab p {
+    font-size: 16px !important;
+  }
+  .templateCardBox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+  }
+  .pageCountBox {
+    gap:40px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .monthname{
+    font-size: 1.5rem;
+  }
+}

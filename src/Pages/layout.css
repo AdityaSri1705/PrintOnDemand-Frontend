@@ -1,0 +1,835 @@
+.PageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.SubNav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: #4b596d;
+  border-top: 1px solid #fff;
+  position: relative;
+}
+.CnavItem {
+  width: 133px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CnavItem p {
+  /* Text/Button Small */
+  font-family: "Poppins-Regular" !important;
+  font-size: 10px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  cursor: pointer;
+  color: #ffffff81;
+}
+.PopInfo {
+  position: absolute;
+  top: 60px;
+  border: 3px solid #4b596d;
+  box-shadow: 0 1px 14px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  z-index: 1;
+  width: 90%;
+  display: none;
+}
+.PopInfo.open {
+  display: block;
+}
+
+.PopInfo::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  box-shadow: 0 1px 14px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  position: absolute;
+  z-index: 2;
+}
+.PopInfo::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 1px 14px rgba(0, 0, 0, 0.2);
+}
+.PopInfo.arrow-top:before {
+  left: calc(50% - 10px);
+  top: -8px;
+}
+.PopInfo.arrow-right:before {
+  top: calc(50% - 10px);
+  right: -8px;
+}
+.PopInfo.arrow-bottom:before {
+  left: calc(50% - 10px);
+  bottom: -8px;
+}
+.PopInfo.arrow-left:before {
+  top: calc(50% - 10px);
+  left: -8px;
+}
+.PopInfo.no-arrow:before{
+  width: 0;
+}
+.PopInfo-wrapper {
+  width: 100%;
+  padding: 15px;
+  background: #fff;
+  z-index: 10;
+  position: relative;
+}
+.PopInfoClose {
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: 700 !important;
+}
+.PopInfoText {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.PopInfoText span {
+  font-weight: bold;
+  display: block;
+  margin: 10px auto;
+}
+.PopInfoText .plusicon {
+  position: relative;
+  top: 6px;
+}
+.navFont {
+  color: #fff !important;
+}
+.PageBox {
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+.PageInnerBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.LeftPanelBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+.LeftPanelBox.noscroll {
+  height: auto;
+  overflow: unset;
+  padding-right: 0;
+}
+.LeftPanelBox .LeftHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.LeftInner {
+  width: 100%;
+}
+.LeftPanelBox .LeftHeader .LeftTitle {
+  color: var(--greyscale-900, #212121);
+  text-align: center !important;
+  font-family: "Poppins-Regular" !important;
+  font-size: 19px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 132% !important;
+  margin-bottom: 25px !important;
+}
+.LeftPanelBox .LeftHeader .LeftSubText {
+  color: #848383;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 22px !important;
+  margin-bottom: 18px !important;
+}
+.fullexpand .LeftPanelBox {
+  width: 50px;
+  max-height: 400px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.fullexpand .RightPanelBox {
+  width: calc(100% - 70px);
+  width: -moz-calc(100% - 70px);
+  width: -webkit-calc(100% - 70px);
+  max-width: none;
+}
+.fullexpand .LeftPanelBox .LeftHeader {
+  display: none;
+}
+.fullexpand .LeftPanelBox .LeftInner {
+  opacity: 0;
+}
+.sideButton {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: none;
+}
+.sideButton img {
+  width: 100%;
+  height: 100%;
+}
+.setTimeBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sideChangeableTab {
+  width: 100%;
+}
+.customOption {
+  width: 100%;
+  height: 46px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #909090;
+  background: #fff;
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+.customOption p {
+  color: #7c7c7c;
+  font-family: "Poppins-Regular" !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 132% !important;
+}
+.customOptionDownArrow {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  cursor: pointer;
+}
+.customPageBottomBox {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  border: 1px solid #909090;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  padding: 15px 20px 20px 0px;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+}
+.BoxHeaderText {
+  color: var(--greyscale-900, #212121);
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  padding-left: 16px !important;
+  cursor: pointer;
+}
+.choseOneSubText {
+  display: none;
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 140% !important;
+}
+.customPageTabBox {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  border: 1px solid #909090;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  padding: 15px 20px 20px 0px;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.12);
+}
+.customPageTabCloseBox {
+  height: 57px;
+}
+.customPageTabCloseBox.x2 {
+  height: 74px;
+}
+
+.customPageBoxHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.customRadioBox {
+  display: flex;
+  flex-direction: column;
+}
+.BoxHeaderText {
+  color: var(--greyscale-900, #212121);
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  padding-left: 16px !important;
+  cursor: pointer;
+}
+
+.choseOneSubText {
+  display: none;
+  color: #000;
+  font-family: "Poppins-Regular" !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 140% !important;
+}
+
+.RightPanelBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.RightPanelBox .RightHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.RightPanelBox .RightHeaderText {
+  color: var(--greyscale-900, #212121);
+  font-size: 17px !important;
+  font-family: "Poppins-Regular" !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 140% !important;
+}
+.RightPanelBox .RightSubText {
+  font-size: 12px !important;
+  color: var(--greyscale-900, #212121);
+  font-family: "Poppins-Regular" !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+  display: inline-block;
+}
+.RightPanelBox .PreviewContainer {
+  max-width: 1475px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.PreviewContainer .diray_base {
+  width: 100%;
+  height: 100%;
+}
+.PreviewContainer .diray_inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.7% 0.7% 1.5% 0.7%;
+}
+.PreviewContainer .diray_inner .diray_page {
+  width: 49%;
+  position: relative;
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.leftpage {
+  padding: 2% 1% 2% 2%;
+  border-radius: 3px 0 0 3px;
+}
+.rightpage {
+  padding: 2% 2% 2% 1%;
+  border-radius: 0 3px 3px 0;
+}
+.PreviewContainer .diray_inner .page img {
+  width: 100%;
+  height: 100%;
+}
+.PreviewOuter {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+
+.largeview .PreviewContainer {
+  width: 1465px;
+}
+.LargeView {
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  width: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+.LargeView .lensIcon {
+  width: 100%;
+}
+
+.CloseLargeView {
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  z-index: 10;
+  cursor: pointer;
+}
+/* priceBox Css */
+
+.priceHoverBox {
+  display: flex;
+  width: 100%;
+  height: 155px;
+  flex-direction: column;
+  padding: 5px 40px;
+  background: #fff;
+  box-shadow: 0px 4px 60px 0px rgba(4, 6, 15, 0.05);
+  position: fixed;
+  bottom: 0px;
+  z-index: 2;
+  cursor: pointer;
+}
+.priceHoverBox:hover{
+  cursor: url('../Assets/images/move-icon.png'), auto;
+}
+.price_nextBtn {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 2px;
+  background: var(--primary-ocher, #b8845f);
+  transition: all 0.5s;
+  cursor: pointer;
+
+  /* Button/Shadow 1 */
+  box-shadow: 4px 8px 12px 0px rgba(133, 84, 50, 0.2);
+}
+.price_nextBtn:hover {
+  background: #9c7050;
+}
+.price_nextBtn p {
+  color: var(--primary-white, #fff);
+  text-align: center;
+
+  /* Text/Button default */
+  font-family: "Poppins-Regular" !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+}
+.priceInfo {
+  display: flex;
+  flex-direction: column;
+}
+.priceInfo1Sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.priceInfo1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #e4e5e1;
+}
+.priceInfoText {
+  color: var(--primary-ocher, #b8845f);
+
+  /* Text/Button Small */
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+}
+.priceInfoBlackText {
+  color: var(--greyscale-900, #212121);
+
+  /* Text/Body 3 */
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 22px !important;
+}
+.priceInfo2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.priceInfo2Text {
+  color: var(--primary-ocher, #b8845f);
+
+  /* Text/Button Small */
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+}
+.priceInfo2PriceText {
+  color: var(--greyscale-900, #212121);
+  /* Text/H4 */
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 40 !important;
+  line-height: normal;
+}
+
+.PageSubImages {
+  width: 100% !important;
+  max-height: 100%;
+  height: 100%;
+}
+.FullWidthImg {
+  width: 100% !important;
+  height: auto !important;
+}
+.QuoteImage {
+  width: 100%;
+  max-height: 100%;
+}
+.DailyDateBTitle {
+  font-size: 6px !important;
+  color: #212121;
+  font-family: "JosefinSans" !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  text-transform: uppercase;
+  margin-right: 3px !important;
+}
+.DailyDateSTitle {
+  font-size: 6px !important;
+  color: #212121;
+  font-family: "PT Sans" !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2 !important;
+}
+.QuoteContainer {
+  width: 100%;
+  height: 100%;
+}
+.QuoteContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.QuoteContainer .QuoteText {
+  font-size: 4px;
+  /* font-family: "JosefinSans" !important; */
+  line-height: 1.2 !important;
+}
+.largeview .QuoteContainer .QuoteText,
+.QuoteContainer .author {
+  font-size: 12px;
+}
+.QuoteContainer .author {
+  font-size: 4px;
+  /* font-family: "PT Sans" !important; */
+  line-height: 1;
+  font-weight: normal;
+}
+.largeview .QuoteContainer .author {
+  font-size: 12px;
+}
+.QuoteContainer.RefQuote .QuoteSubContainer {
+  position: absolute;
+  top: 44%;
+  text-align: center;
+  background: #fff;
+  height: 50%;
+}
+.QuoteContainer.RefQuote .QuoteText,
+.QuoteContainer.RefQuote .author {
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+}
+
+.QuoteContainer.QC-198 .QuoteText,
+.QuoteContainer.QC-198 .author {
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+}
+
+.largeview .QuoteContainer.RefQuote .QuoteText,
+.largeview .QuoteContainer.QC-198 .QuoteText {
+  font-size: 12px;
+}
+.largeview .QuoteContainer.RefQuote .author,
+.largeview .QuoteContainer.QC-198 .author {
+  font-size: 10px;
+}
+.largeview .DailyDateBTitle {
+  font-size: 12px !important;
+  margin-right: 10px !important;
+}
+.largeview .DailyDateSTitle {
+  font-size: 12px !important;
+}
+.largeview .preweek,
+.largeview .weekquater {
+  width: auto !important;
+}
+.insideCover_binder {
+  position: absolute;
+  top: 0;
+  left: -11%;
+  bottom: 0;
+  height: 100%;
+  width: 17%;
+}
+@media only screen and (min-width: 768px) {
+  .PopInfo {
+    width: 30%;
+  }
+  .PageInnerBox {
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+  }
+  .LeftPanelBox {
+    width: 310px;
+    align-self: flex-start;
+    height: 700px;
+    margin-left: 15px;
+  }
+
+  .LeftPanelBox.noscroll {
+    padding-right: 15px;
+  }
+  .LeftPanelBox::-webkit-scrollbar {
+    width: 12px;
+  }
+  .LeftPanelBox::-webkit-scrollbar-track {
+      background: #999; /* Darker color for the track */
+  }
+
+  .LeftPanelBox::-webkit-scrollbar-thumb {
+      background: #4d4c4c; /* Darker color for the thumb */
+      border-radius: 6px;
+  }
+
+  .LeftPanelBox::-webkit-scrollbar-thumb:hover {
+      background: #222; /* Darker color for the thumb on hover */
+  }
+  .RightPanelBox {
+    width: calc(100% - 320px);
+    width: -moz-calc(100% - 320px);
+    width: -webkit-calc(100% - 320px);
+    margin-left: 15px;
+    margin-top: 25px;
+  }
+  .RightPanelBox .RightHeaderText {
+    font-size: 18px !important;
+  }
+  .RightPanelBox .RightSubText {
+    font-size: 16px !important;
+  }
+  .RightPanelBox .RightHeader {
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
+
+  .DailyDateBTitle {
+    font-size: 6px !important;
+    margin-right: 10px !important;
+  }
+  .DailyDateSTitle {
+    font-size: 6px !important;
+  }
+  .WeeklyDateDTitle {
+    font-size: 8px !important;
+    color: #212121;
+    font-family: "JosefinSans" !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    margin-right: 2px !important;
+  }
+
+  .choseOneSubText {
+    display: block;
+  }
+  .QuoteContainer .QuoteText,
+  .QuoteContainer .author {
+    font-size: 6px;
+    line-height: 1.5 !important;
+  }
+  .leftpage {
+    padding: 2% 2% 2% 2%;
+  }
+  .rightpage {
+    padding: 2% 2% 2% 2%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .LeftPanelBox {
+    width: 419px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-right: 15px;
+    align-self: flex-start;
+  }
+  .RightPanelBox {
+    width: calc(100% - 419px);
+    width: -moz-calc(100% - 419px);
+    width: -webkit-calc(100% - 419px);
+    max-width: 1500px;
+    margin-left: 15px;
+    margin-top: 0;
+  }
+  .LeftPanelBox .Header .title {
+    font-size: 26px !important;
+  }
+
+  .DailyDateBTitle {
+    font-size: 10px !important;
+    margin-right: 10px !important;
+  }
+  .DailyDateSTitle {
+    font-size: 10px !important;
+  }
+
+  .LargeView,
+  .CloseLargeView {
+    width: 45px;
+    height: 45px;
+    bottom: 29px;
+    right: 23px;
+  }
+  
+  .leftpage {
+    padding: 2% 3.5% 2% 2%;
+  }
+  .rightpage {
+    padding: 2% 2% 2% 3.5%;
+  }
+  .QuoteContainer .QuoteText,
+  .QuoteContainer .author {
+    font-size: 6px;
+    line-height: 1.5 !important;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .QuoteContainer .QuoteText,
+  .QuoteContainer .author {
+    font-size: 7px;
+    line-height: 1.5 !important;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .QuoteContainer .QuoteText,
+  .QuoteContainer .author {
+    font-size: 8px;
+    line-height: 1.5 !important;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .DailyDateBTitle {
+    font-size: 12px !important;
+  }
+  .DailyDateSTitle {
+    font-size: 12px !important;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .sideButton {
+    display: none;
+  }
+  .QuoteContainer .QuoteText,
+  .QuoteContainer .author {
+    font-size: 12px;
+    line-height: 1.5 !important;
+  }
+  .QuoteContainer.RefQuote .QuoteText,
+  .QuoteContainer.QC-198 .QuoteText {
+    font-size: 12px;
+  }
+  .QuoteContainer.RefQuote .author,
+  .QuoteContainer.QC-198 .author {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 1760px) {
+  .sideButton {
+    display: none;
+  }
+  .QuoteContainer .QuoteText,
+  .QuoteContainer .author {
+    font-size: 15px;
+    line-height: 1.5 !important;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  /* .RightPanelBox .PreviewContainer {
+    max-width: 1500px;
+  } */
+  .PageSubImages {
+    /* width: auto; */
+    /* height: auto; */
+  }
+  .FullWidthImg {
+    /* width: auto !important; */
+    height: auto !important;
+  }
+}

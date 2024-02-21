@@ -1,0 +1,280 @@
+.signUpContainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../Assets/images/loginBg.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.backDrop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #80808087;
+}
+.loginBox {
+  width: 98%;
+  height: 604px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #fff;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 30px;
+  position: relative;
+}
+.companyBanner {
+  width: 80%;
+  height: 80px;
+  margin-bottom: 25px;
+}
+.companyBanner img {
+  width: 100%;
+  height: 100%;
+}
+.googleSignUp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 71px;
+  border-radius: 7px;
+  border: 1px solid #f0f0f0;
+  background: #fff;
+}
+.googleIcon {
+  width: 32px;
+  height: 32px;
+}
+.googleSignUp p {
+  color: #040404;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  letter-spacing: 1.2px !important;
+}
+.divider {
+  width: 100%;
+  margin: 35px 0;
+  position: relative;
+}
+hr {
+  color: gray;
+}
+.divider p {
+  color: #1a1a1a;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  position: absolute;
+  top: -11px;
+  left: 110px;
+  background: #fff;
+  width: 60px;
+}
+.singInButton {
+  width: 100%;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.singInButton p {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  letter-spacing: 1.2px !important;
+}
+.createAndResetTab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.CandPtab {
+  width: 180px;
+  height: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CandPRightBorder {
+  border-right: 1px solid gray;
+}
+.CandPtab p {
+  color: #1a1a1a;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+}
+.emailInputBox {
+  position: relative;
+}
+.emailIcon {
+  position: absolute;
+  top: 22px;
+  right: 31px;
+}
+.emailInput {
+  width: 310px !important;
+}
+.emailInput div {
+  height: 60px !important;
+}
+.passwordInput {
+  width: 310px !important;
+}
+.passwordInputBox {
+  position: relative;
+}
+.passwordIcon {
+  position: absolute;
+  top: 23px;
+  right: 31px;
+  cursor: pointer;
+}
+.passwordInput div {
+  height: 60px !important;
+}
+.lonIn_crossButton {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -17px;
+  right: -20px;
+  cursor: pointer;
+}
+
+/* signUp */
+.SignUpBox {
+  width: 98%;
+  height: 645px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #fff;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 30px;
+  position: relative;
+}
+.SignUpBox.success{
+  height: auto;
+}
+.SignUpBText1 {
+  color: #1a1a1a;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}
+.SignUpBText2 {
+  color: #0d68f1;
+  font-family: "Poppins-Regular" !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+}
+
+/* EmailVerify */
+.emailVerifyBox {
+  width: 98%;
+  height: 604px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #fff;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 30px;
+  position: relative;
+}
+.tickbox {
+  text-align: center;
+}
+.tickbox p{
+  color: #040404;
+  text-align: center;
+  font-family: "Poppins-Regular" !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  letter-spacing: 1.2px !important;
+  
+}
+.CrossIcon{
+  width: 50px;
+}
+
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .companyBanner {
+    width: 410px;
+  }
+  .loginBox {
+    width: 600px;
+    padding: 40px 64px;
+  }
+  .emailInput {
+    width: 470px !important;
+  }
+  .emailInput div {
+    height: 60px !important;
+  }
+  .passwordInput {
+    width: 470px !important;
+  }
+
+  .divider p {
+    top: -11px;
+    left: 209px;
+  }
+
+  /* siginUP */
+  .SignUpBox {
+    width: 600px;
+    padding: 40px 64px;
+    height: 698px;
+  }
+  .SignUpBText1 {
+    font-size: 17px !important;
+  }
+  .SignUpBText2 {
+    font-size: 17px !important;
+  }
+
+   /* EmailVerify */
+  .emailVerifyBox {
+    width: 600px;
+    padding: 40px 64px;
+  }
+
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+}

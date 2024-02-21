@@ -1,0 +1,32 @@
+<script>
+    //frinedbuy script
+    window["friendbuyAPI"] = friendbuyAPI = window["friendbuyAPI"] || [];
+
+    // registers your merchant using your merchant ID found in the
+    // retailer app https://retailer.friendbuy.io/settings/general
+    friendbuyAPI.merchantId = "13b7e219-985d-4f05-b176-0ea87432f6ee";
+    friendbuyAPI.push(["merchant", friendbuyAPI.merchantId]);
+
+    // load the merchant SDK and your campaigns
+    (function(f, r, n, d, b, u, y) {
+      while ((u = n.shift())) {
+        (b = f.createElement(r)), (y = f.getElementsByTagName(r)[0]);
+        b.async = 1;
+        b.src = u;
+        y.parentNode.insertBefore(b, y);
+      }
+    })(document, "script", [
+      "https://static.fbot.me/friendbuy.js",
+      "https://campaign.fbot.me/" + friendbuyAPI.merchantId + "/campaigns.js",
+    ]);
+console.log("index=>",friendbuyAPI, friendbuyAPI.merchantId, window.friendbuyAPI);
+  </script>
+  <Box id="friendbuy-landingpage"></Box>
+  <script>
+    const friendbuyAPI = window['friendbuy'] || [];
+    console.log("call=>",friendbuyAPI, window["friendbuyAPI"])
+    if (friendbuyAPI) {
+       friendbuyAPI.push(["track", "page", {name:"Referral"}]);
+      console.log("friendbuyAPI=>Called")
+    }
+  </script>

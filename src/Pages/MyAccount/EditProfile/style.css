@@ -1,0 +1,225 @@
+.myAccountContainer {
+  width: 100%;
+  padding: 30px 10px 0px 10px;
+}
+.myAccountHeader {
+  width: 100%;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.myAccountHeaderText {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 23px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+}
+.myAccountHeaderNavigation {
+  display: flex;
+  flex-direction: row;
+}
+.myAccountHeaderNavigation p {
+  color: #727272;
+  font-family: "Montserrat";
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+}
+.myAccountInfoBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.myAccountSideMenu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.myAccountSideMenuItem {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.myAccountSideMenuItemText {
+  color: #636363;
+  font-family: "Montserrat" !important;
+  font-size: 10px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.activeTabText {
+  color: #b8845f !important;
+}
+.myAccountDetailsBox {
+  width: 100%;
+  border-left: 1px solid #e1e1e1;
+}
+
+/* my account info */
+.myAccountTab {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  position: relative;
+}
+.myAccountTabItem {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.myAccountTabItem2 {
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.myAccountTabHeader {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+}
+.myAccountTabSubHeader {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 7px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 56px !important;
+  text-transform: uppercase;
+}
+.myAccountTabSubHeaderEmail {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 10px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 26px !important;
+  letter-spacing: 0.75px !important;
+}
+.myAccountTabLinkText {
+  color: #b8845f;
+  font-family: "Montserrat";
+  font-size: 6px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 56px !important;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.myAccountTabSubSpacing p {
+  margin-right: 12% !important;
+}
+/* .myAccountTabSubSpacing2 p {
+  margin-right: 7% !important;
+} */
+.myAccountTabSubYSpacing2 p {
+  margin-right: 7% !important;
+}
+.sideMenuIcon {
+  display: block;
+  position: absolute;
+  left: -14px;
+  top: 49%;
+  z-index: 999 !important;
+}
+
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .sideMenuIcon {
+    display: none !important;
+  }
+  .myAccountTabSubSpacing2 p {
+    margin-right: 3% !important;
+  }
+  .myAccountContainer {
+    padding: 62px 70px 0px 70px;
+  }
+  .myAccountSideMenuItemText {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+  }
+  .myAccountTabHeader {
+    font-size: 19px !important;
+  }
+  .myAccountTab {
+    padding-left: 25px;
+  }
+  .myAccountTabSubHeader {
+    font-size: 12px !important;
+  }
+  .myAccountTabLinkText {
+    font-size: 13px !important;
+  }
+  .myAccountSideMenu {
+    width: 311px !important;
+  }
+  .myAccountTabItem {
+    justify-content: start;
+    height: 64px;
+  }
+  .myAccountTabSubHeaderEmail {
+    font-size: 12px !important;
+  }
+}
+
+.myAccountInputBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.myAccountCheckBox {
+  display: flex;
+  flex-direction: row;
+}
+.myAccountTitleBox{
+  display: flex;
+  flex-direction: row;
+  margin: 60px auto;
+}
+.myAccountTitle{
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+}
+.myAccountButtonBox{
+  width: 50%;
+}
+.passwordInputBox{
+  position: relative;
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+  .myAccountTabSubSpacing2 p {
+    margin-right: 7% !important;
+  }
+  .myAccountTabSubHeader {
+    font-size: 15px !important;
+  }
+  .myAccountTabSubSpacing p {
+    margin-right: 20% !important;
+  }
+}

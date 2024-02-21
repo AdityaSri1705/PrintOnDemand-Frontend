@@ -1,0 +1,74 @@
+.StripeForm{
+    width: 100%;
+    margin-top: 30px;
+}
+.StripeForm .StripeElement {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  letter-spacing: 0.00938em;
+  color: rgba(0, 0, 0, 0.87);
+  padding:16.5px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.23)
+}
+.StripeForm .button {
+    width: 100%;
+    margin: 10px 0;
+    color: var(--primary-white, #fff);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.ErrMsg{
+  color: #F00;
+}
+
+.cartSubHeader{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.cartSubHeader .cartHeaderSubText{
+  color: #b8845f;
+  text-align: center;
+  font-family: "Montserrat" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: 22px !important;
+  margin-bottom: 18px !important;
+  cursor: pointer;
+}
+.paymentCardSummeryBox{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ZipBox{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CardLabel{
+  color: #A2A2A2;
+  font-family: "Montserrat" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  line-height: 22px !important;
+}
+.ZipLabel{
+  color: #A2A2A2;
+  text-align: center;
+  font-family: "Montserrat" !important;
+  font-size: 16px !important;
+  font-style: normal;
+  line-height: 22px !important;
+  margin-right: 30px !important;
+}
